@@ -24,10 +24,30 @@ console.log("il numero è:" + number);
 for (let i = 1; i <= 100; i++) {
     if (i % 5 == 0 && i % 3 == 0) {
         console.log("FizzBuzz")
+        document.getElementById("squarecontainer").innerHTML += `
+            <div class="square bg">
+                <p class="text-center bg-danger text-white fs-3 fw-3 vertical-align-square">FizzBuzz</p>
+            </div>
+            `
     } else if (i % 5 == 0) {
         console.log("Buzz")
+        document.getElementById("squarecontainer").innerHTML += `
+            <div class="square bg">
+                <p class="text-center bg-warning text-white fs-3 fw-3 vertical-align-square">Buzz</p>
+            </div>
+            `
     } else if (i % 3 == 0) {
         console.log("Fizz")
-    } else (console.log(i));
+        document.getElementById("squarecontainer").innerHTML += `
+            <div class="square bg">
+                <p class="text-center bg-success text-white fs-3 fw-3 vertical-align-square">Fizz</p>
+            </div>
+            `
+    } else console.log(i)
+    document.getElementById("squarecontainer").innerHTML += `
+        <div class="square bg">
+            <p class="text-center bg-info text-white fs-3 fw-3 vertical-align-square">${i}</p>
+        </div>
+        `;
 }
 
