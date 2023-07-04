@@ -22,13 +22,13 @@ console.log("il numero è:" + number);
 
 
 for (let i = 1; i <= 100; i++) {
-    if (i % 3 == 0) {
-        console.log("Fizz")
+    if (i % 5 == 0 && i % 3 == 0) {
+        console.log("FizzBuzz")
     } else if (i % 5 == 0) {
         console.log("Buzz")
-    } else if (i % 5 == 0 && i % 3 == 0); {
-        console.log("FizzBuzz")
-    } else ( )
+    } else if (i % 3 == 0) {
+        console.log("Fizz")
+    }
     console.log(i);
 }
 
